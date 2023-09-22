@@ -6,4 +6,4 @@ Research project created for _Department of Agriculture, Sri Lanka_ using only v
 2. Check you have installed "**Lexend**" font in your local computer.
 3. Explore it and have fun! ✌️
 
-Note: Feel free to contact me if you need any help.
+Note: This is a sample website created for educational purpose only.
