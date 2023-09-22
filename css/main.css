@@ -8,7 +8,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
+/****************************************************************/
 .intro-container {
   height: 720px;
   background: url(../images/background_01.jpg);
@@ -140,10 +140,91 @@ a {
   align-items: center;
   justify-content: center;
   font-size: 1.25rem;
+  font-family: inherit;
   border: none;
   background-color: #fff;
 }
 
 .intro-find img {
   margin-left: 1rem;
+}
+
+/**** Agro Tech Page Styles ****/
+
+.agro-container {
+  height: 800px;
+}
+
+.agro-title {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.agro-title h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.agro-body {
+  width: 100%;
+  height: 70%;
+  /* padding: 40px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.agro-card {
+  width: 25%;
+  height: 80%;
+  margin: 0 40px;
+  padding-bottom: 1.5rem;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  font-size: 1.5rem;
+  background-color: #CF5B23;
+  border-radius: 10px;
+}
+
+.card-container {
+  width: 80%;
+  padding: 1rem 1.5rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+.land-preperation {
+  background: url("../images/img_land preperation 1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.seed-planting {
+  background: url("../images/img_seed planting.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.harvesting {
+  background: url("../images/img_harvesting 1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-title {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.card-btn button {
+  width: 225px;
+  padding: 0.8rem;
+  font-size: 1.25rem;
+  font-family: inherit;
+  border: none;
+  background-color: #FFD700;
 }
