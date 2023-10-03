@@ -342,3 +342,53 @@ a {
 .contact-item img {
   margin-right: 1rem;
 }
+
+.login-container {
+  height: 100vh;
+}
+
+.bg-dark {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.login-body {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #D9D9D9;
+}
+
+.body-container {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  background-color: #fff;
+}
+
+.body-intro {
+  width: 60%;
+  height: 100%;
+  background-color: #CF5B23;
+}
+
+.login-heading {
+  padding-left: 10%;
+  padding-top: 5%;
+}
+
+.login-heading h1, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.login-img {
+  background-color: red;
+  padding-left: 10%;
+  padding-top: 5%;
+}
+
+.login-img img {
+  width: 50%;
+  background-size: cover;
+}
