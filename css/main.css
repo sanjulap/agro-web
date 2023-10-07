@@ -478,3 +478,87 @@ a {
   align-items: center;
   justify-content: center;
 }
+
+.nav-username {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-username a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.admin-item {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-item:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  text-decoration: underline;
+}
+
+.h3-table {
+  text-align: center;
+  margin: 20px;
+
+}
+.h3-table h3{
+  margin-bottom: 2rem;
+  color: #CF5B23;
+}
+
+.admin-table {
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+tr:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Style the Edit and Update buttons (you can adjust these styles as needed) */
+td:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Add hover effect to table rows */
+tr:hover {
+  background-color: #444;
+}
+
+.admin-container {
+  height: 100vh;
+  background: url(../images/img_admin-page-01.jpg);
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+}
