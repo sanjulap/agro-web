@@ -3,6 +3,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'Lexend', sans-serif;
+  box-sizing: border-box;
 }
 
 a {
@@ -274,7 +275,7 @@ a {
 
 .aboutus-details {
 
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   line-height: 160%;
 }
 
@@ -398,7 +399,7 @@ a {
   width: 40%;
   padding-left: 5%;
   padding-top: 5%;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .body-details p {
@@ -416,7 +417,7 @@ a {
   height: 3rem;
   margin-bottom: 5%;
   padding-left: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   border: none;
   background-color: #D9D9D9;
   color: #767676;
@@ -431,7 +432,7 @@ a {
   height: 3rem;
   margin-bottom: 5%;
   padding-left: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   border: none;
   background-color: #D9D9D9;
   color: #767676;
@@ -448,7 +449,7 @@ a {
 .login-type select {
   width: 300px;
   height: 3rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   padding-left: 1rem;
 }
 
@@ -464,13 +465,22 @@ a {
   align-items: center;
   justify-content: center;
   font-family: inherit;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   background-color: #FFD700;
   border: none;
 }
 
 .login-btn img {
   margin-left: 1rem;
+}
+
+.register-link {
+  font-size: 1.2rem;
+  color: #767676;
+}
+
+.register-link a {
+  color: #000;
 }
 
 .footer-container {
