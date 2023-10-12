@@ -1,3 +1,26 @@
+<?php
+	// create database connection
+	include_once './php/connect.php';
+
+	// check login form data
+	if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit-login'])) {
+		if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['login-type'])) {
+			$username = $_POST['username'];
+			$password = $_POST['password'];
+			$userType = $_POST['login-type'];
+
+			$SQL =  "SELECT username, password, user_type FROM users WHERE username = '$username' AND password = '$password' AND user_type = '$userType'";
+			$result = $connection->query($SQL);
+
+			if ($result->num_rows > 0) {
+				header('Location: Admin_page.html');
+			} else {
+				echo 'Login Failed';
+			}
+		}
+	}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,35 +34,7 @@
 <body>
 	<div class="login-container">
 		<!-- Navigation Panel -->
-		<div class="nav-container bg-dark">
-			<!-- Navigation Logo -->
-			<div class="nav-logo-container">
-				<div class="nav-logo">
-				<img src="./images/icon_statesymbol.png" alt="navigation logo icon">
-				</div>
-				<div class="nav-logo-desc">
-				Department of Agriculture<br> Sri Lanka
-				</div>
-			</div>
-
-			<!-- Navigation Menu -->
-			<div class="nav-menu-container">
-				<div class="menu-item"><a href="#Home">Home</a></div>
-				<div class="menu-item"><a href="#about-us">About Us</a></div>
-				<div class="menu-item"><a href="#agro-tech">Agro Tech</a></div>
-				<div class="menu-item"><a href="#contact-us">Contact</a></div>
-			</div>
-
-			<!-- Navigation Login -->
-			<div class="nav-login-container">
-				<div class="login-icon">
-				<img src="./images/icon_login.png" alt="login icon">
-				</div>
-				<div class="login-desc">
-				<a href="login.html">Login</a>
-				</div>
-			</div>
-		</div>
+		<?php include_once './php/navigation.php' ?>
 
 		<!-- Login Body -->
 		<div class="login-body bg-white">
@@ -57,31 +52,35 @@
 
 				<!-- Login body details - Right part -->
 				<div class="body-details">
-					<form action="GET">
+				<!-- 
+					<form action="connect-login.php" method="post">
+					Note: you can use form action attribute to specify different file to process.
+				-->
+					<form method="post">
 						<div class="login-username">
 							<p>Username</p>
-							<input type="text" name="Username" id="login-username" placeholder="ravindu.perera">
+							<input type="text" name="username" id="login-username" placeholder="ravindu.perera">
 						</div>
 						<div class="login-password">
 							<p>Password</p>
-							<input type="password" name="Password" id="login-password" placeholder="***************">
+							<input type="password" name="password" id="login-password" placeholder="***************">
 						</div>
 						<div class="login-type">
 							<span>Login as : </span>
 							<select name="login-type" id="login-type">
 								<option value="Admin">Admin</option>
 								<option value="Farmer">Farmer</option>
-								<option value="Guest">Field Officer</option>
+								<option value="Officer">Field Officer</option>
 							</select>
 						</div>
 						<div class="login-btn">
-							<button type="submit">
+							<button type="submit" name="submit-login">
 								Login
 								<img src="./images/icon-login.png" alt="login icon">
 							</button>
 						</div>
 						<div class="register-link">
-							<p>New user? <a href="register.html">Register</a></p>
+							<p>New user? <a href="register.php">Register</a></p>
 						</div>
 					</form>
 				</div>
@@ -89,7 +88,7 @@
 		</div>
 
 		<!-- Footer -->
-		<div class="footer-container bg-dark">
+		<div class="footer-container">
 			<div>All Right Reserved. &copy; 2023</div>
 		</div>
 	</div>

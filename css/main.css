@@ -24,10 +24,11 @@ a {
   display: flex;
   width: 100%;
   height: 10%;
+  /* padding: 1rem 0; */
   color: #fff;
   font-size: 1.1rem;
   border-bottom: 2px solid #fff;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* navigation logo */
@@ -52,6 +53,11 @@ a {
   border-left: 2px solid #fff;
   border-right: 2px solid #fff;
   display: flex;
+}
+
+.nav-padding {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .menu-item {
@@ -351,7 +357,7 @@ a {
 }
 
 .bg-dark {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .login-body {
@@ -489,6 +495,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Register page */
@@ -516,7 +523,7 @@ a {
 }
 
 .bg-dark {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .register-body {
